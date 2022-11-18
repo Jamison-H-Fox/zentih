@@ -24,7 +24,7 @@ export const servicesData = {
 export const aboutData = {
     icon: <i className="fas fa-horse"></i>,
     header: 'Our Story',
-    content: 'Cauliflower a seeds quail. Lettus gobblers pens, radish on kidney beans, llamas pick up truck. Killer scourge scared, drowning helpless sheep at, farmers market and cultivator ostrich. Outhouse at nails mower. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robins peacocks an kale. Oranges cucumbers rhubarb gourds watermelon. Petting zoo at carrots alligators quack. Haybine carrots soybeans, owl.'
+    content: 'Doggo ipsum you are doin me a concern shoober shibe wrinkler, pats maximum borkdrive waggy wags shibe, shooberino porgo. Noodle horse borking doggo long woofer ur givin me a spook borkf, floofs porgo very jealous pupper ruff I am bekom fat, fat boi you are doing me a frighten doggorino.  I am bekom fat aqua doggo thicc puggo noodle horse pupperino length boy shoober blep wrinkler, doggorino aqua doggo heckin good boys and girls you are doin me a concern waggy wags tungg very taste wow. Clouds mlem what a nice floof blep puggo, heckin good boys borking doggo very good spot, long bois floofs length boy. Heckin good boys maximum borkdrive the neighborhood pupper waggy wags smol boof, stop it fren shoob doggo. H*ck length boy bork clouds, pats extremely cuuuuuute very taste wow, maximum borkdrive what a nice floof. Big ol pupper very taste wow bork big ol, smol borking doggo with a long snoot for pats.'
 }
 
 export const galleryData = {
