@@ -6,24 +6,24 @@ MVP:
 
 [x] Change 'gallery' to 'testimonials'
 
-[] Stylize components and move away from App.css
+[ ] Stylize components and move away from App.css
 
-[] Move page styles to index.css, link appropriately
+[ ] Move page styles to index.css, link appropriately
 
-[] Adjust some layout to my liking (service cards, contact spacing)
+[ ] Adjust some layout to my liking (service cards, contact spacing)
 
-[] Make 'services' have click to expand info
+[ ] Make 'services' have click to expand info
 
-[] Make testimonials a carousel
+[ ] Make testimonials a carousel
 
 Roadmap:
 
-[] Make media stops for screen scaling
+[ ] Make media stops for screen scaling
 
 components to add:
 
-[] Weather widget?
+[ ] Weather widget?
 
-[] Request contact form
+[ ] Request contact form
 
-[] CTA button that loads contact form
+[ ] CTA button that loads contact form
