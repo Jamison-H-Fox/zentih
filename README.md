@@ -12,6 +12,8 @@ MVP:
 
 [x] Stylize components and move away from App.css *done except for media queries*
 
+[ ] Module for adding font resources
+
 [ ] Option for picture adjacent in the About component
 
 [ ] Make 'services' have click to expand info
