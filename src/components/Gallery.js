@@ -1,5 +1,5 @@
 import React from "react";
-import { galleryData } from '../data/constants'
+import { testimonialData } from '../data/data'
 
 
 function Gallery() {
@@ -7,11 +7,11 @@ function Gallery() {
 
     return (
         <section className="gallery">
-            {galleryData.classNames.map((element, index) => {
+            {testimonialData.classNames.map((element, index) => {
                 return (
                     <div key={index} className={element}>
                         <div className="hide">
-                            <h2>{galleryData.galleryTitles[index]}</h2>
+                            <h2>{testimonialData.galleryTitles[index]}</h2>
                         </div>
                     </div>
                 )

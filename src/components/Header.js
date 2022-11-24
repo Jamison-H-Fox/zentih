@@ -1,13 +1,58 @@
 import React from "react";
-import { headerData } from '../data/constants'
+import { headerData } from '../data/data'
+import styled from 'styled-components'
+import { spacerImgageData } from '../data/data'
+
+const StyledHeader = styled.header`
+
+& nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 10vh;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .logo {
+        background-image: url('${headerData.logoImg}');
+        height: 8vh;
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 25%;
+        margin-left: 3%;
+        opacity: .75;
+    }
+    
+    & .links {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+
+        & a {
+            text-decoration: none;
+            letter-spacing: 3px;
+            color: #4f4f4f;
+            font-family: "PT Sans", sans-serif;
+            
+            &:hover {
+                color: #fcb131;
+            }
+        }        
+    }
+}
+
+`
 
 function Header() {
 
     return (
-        <header>
+        <StyledHeader>
             <nav>
                 <div className="logo">
-                    <img src={headerData.logoImg}/>
                 </div>
                 <div className="links">
                     {headerData.linkList.map((element, idx) => {
@@ -15,7 +60,7 @@ function Header() {
                     })}
                 </div>
             </nav>
-        </header>
+        </StyledHeader>
     )
 };
 

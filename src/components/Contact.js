@@ -1,5 +1,5 @@
 import React from "react";
-import { contactData } from '../data/constants'
+import { contactData } from '../data/data'
 
 
 function Contact() {
@@ -10,7 +10,7 @@ function Contact() {
             <h2>{contactData.mainText}</h2>
             <div className="left">
                 <div className="contact-info">
-                    <h3>Find Us At:</h3>
+                    <h3>{contactData.greeting}</h3>
                     <address>{contactData.address1}<br/>{contactData.address2}<br/>
                         <a href={`tel:${contactData.phone}`}>{contactData.phone}</a><br/>
                         <a href={`mailto:${contactData.email}`}>{contactData.email}</a>

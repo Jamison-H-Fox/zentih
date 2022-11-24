@@ -1,17 +1,35 @@
 import React from "react";
-import { aboutData } from "../data/constants";
+import { aboutData } from "../data/data";
+import styled from "styled-components";
+
+const StyledSection = styled.section`
+    display: flex;
+    justify-content: center;
+
+    & .text {
+        width: 60%;
+        border: 3px solid #4f4f4f;
+        background-color: #fff;
+        text-align: center;
+        padding: 4%;
+
+        & p {
+            text-align: justify;
+        }
+    }
+`
 
 function About() {
 
 
     return (
-        <section id='about'>
+        <StyledSection id='about'>
             <div className="text">
                 {aboutData.icon}
                 <h2>{aboutData.header}</h2>
                 <p>{aboutData.content}</p>
             </div>
-        </section>
+        </StyledSection>
     )
 }
 

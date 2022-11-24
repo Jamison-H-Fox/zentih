@@ -1,11 +1,17 @@
-work to be done:
-[] Stylize components and move away from App.css as much as possible
-[] Make sure all text/content is in component data, nothing in component js files
-[] Adjust some layout to my liking
+MVP:
+[x] Make website title and favicon editable from data.js
+[x] Make sure all text/content is in component data, nothing in component js files
+[x] Change 'gallery' to 'testimonials'
+[] Stylize components and move away from App.css
+[] Move page styles to index.css, link appropriately
+[] Adjust some layout to my liking (service cards, contact spacing)
 [] Make 'services' have click to expand info
-[] Change 'gallery' to 'testimonials'
-[] Make sure that media stops are in place for all components
+[] Make testimonials a carousel
+
+Roadmap:
+[] Make media stops for screen scaling
 
 components to add:
-[] Weather widget
+[] Weather widget?
 [] Request contact form
+[] CTA button that loads contact form

@@ -50,8 +50,6 @@ table {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  /* put a border around everything to see where it stops and starts */
-  /*     border:1px solid red; */
 }
 html {
   font-size: 62.5%;
@@ -83,7 +81,7 @@ h3 {
 section {
   padding: 4% 0;
 }
-a {
+/* a {
   text-decoration: none;
   letter-spacing: 3px;
   color: #4f4f4f;
@@ -91,13 +89,13 @@ a {
 }
 a:hover {
   color: #fcb131;
-}
+} */
 i {
   font-size: 5rem;
 }
 
 /* Header Section Styles */
-header nav {
+/* header nav {
   position: fixed;
   width: 100%;
   top: 0;
@@ -107,23 +105,23 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.logo {
+} */
+/* .logo {
   width: 20%;
   margin-left: 3%;
-}
-.logo img {
+} */
+/* .logo img {
     height: 8vh;
     opacity: .75;
-}
-.links {
+} */
+/* .links {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
-}
+} */
 
 /* Top Section Styles */
-#home {
+/* #home {
   height: 85vh;
   background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/header.jpg?raw=true");
   margin-top: 10vh;
@@ -133,15 +131,21 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
+
+/* .titles {
+  padding: 1.25%;
+  margin: 0% 0% 40% 0;
+  background-color: rgba(255, 255, 255, 0.6);
+} */
 
 /* Farm Section Styles */
-.container {
+/* .container {
   margin-top: 5%;
   display: flex;
   justify-content: space-around;
-}
-.box {
+} */
+/* .box {
   width: 20%;
   border: 3px solid #4f4f4f;
   text-align: center;
@@ -150,33 +154,33 @@ header nav {
 }
 .box h3 {
   margin: 15% 0;
-}
+} */
 
 /* Hero Image Section Styles */
-.hero-image {
+/* .spacer-image {
   height: 40vh;
   background-image: url("https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/dirt.jpg?raw=true");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-}
+} */
 
 /* About Section Styles */
-#about {
+/* #about {
   display: flex;
   justify-content: center;
-}
-.text {
+} */
+/* .text {
   width: 60%;
   border: 3px solid #4f4f4f;
   background-color: #fff;
   text-align: center;
   padding: 4%;
-}
-.text p {
+} */
+/* .text p {
   text-align: left;
-}
+} */
 
 /* Gallery Section Styles */
 .gallery {
@@ -247,41 +251,41 @@ header nav {
 }
 
 /* Footer Section Styles */
-footer {
+/* footer {
   background-color: #fcb131;
   color: #fff;
   padding: 2% 0;
   display: flex;
   justify-content: center;
-}
-footer a {
+} */
+/* footer a {
   color: #fff;
-}
-footer a:hover {
+} */
+/* footer a:hover {
   color: #4f4f4f;
-}
-footer div {
+} */
+/* footer div {
   width: 30%;
-}
-nav.social {
+} */
+/* nav.social {
   display: flex;
   justify-content: space-between;
   margin-top: 10%;
-}
-nav.main {
+} */
+/* nav.bottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-nav.main a {
+} */
+/* nav.main a {
   margin: 2% 0;
-}
-.copyright {
+} */
+/* .copyright {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-}
+} */
 
 /* Media Queries */
 /* Tablet */

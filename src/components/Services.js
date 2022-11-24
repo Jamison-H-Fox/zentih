@@ -1,6 +1,24 @@
 import React from "react";
-import { servicesData } from '../data/constants'
+import { servicesData } from '../data/data'
+import styled from 'styled-components'
 
+const StyledDiv_Box = styled.div`
+    width: 20%;
+    border: 3px solid #4f4f4f;
+    text-align: center;
+    padding: 4%;
+    background-color: #fff;
+`
+
+const StyledDiv_Container = styled.div`
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+`
+
+const StyledH3 = styled.h3`
+    margin: 15% 0;
+`
 
 function Services() {
 
@@ -8,16 +26,16 @@ function Services() {
     return (
         <section id='services'>
             <h2>{servicesData.mainText}</h2>
-            <div className="container">
+            <StyledDiv_Container className="container">
                 {servicesData.serviceNames.map((element, index) => {
                     return (
-                        <div key={index} className="box">
+                        <StyledDiv_Box key={index} className="box">
                             {servicesData.serviceIcons[index]}
-                            <h3>{element}</h3>
-                        </div>
+                            <StyledH3>{element}</StyledH3>
+                        </StyledDiv_Box>
                     )
                 })}
-            </div>
+            </StyledDiv_Container>
         </section>
     )
 }
