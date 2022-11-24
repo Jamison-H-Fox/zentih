@@ -1,9 +1,9 @@
-// need to fix section ids to match linkList values
 export const docData = {
     faviconURL: './resources/docData/Zenith Logo Circle Filled.png',
     siteTitle: 'Zenith Solar'
 }
 
+// need to fix section ids to match linkList values
 export const headerData = {
     logoImg: './resources/header/Zenith Logo Horozontal.png',
     linkList: ['Home','Services','About','Contact']
@@ -21,9 +21,10 @@ export const spacerImgageData = {
 }
 
 export const servicesData = {
-    mainText: 'Services',
-    serviceNames: ['Diagnostic Bloodwork','Meal Planning','Being Hot'],
-    serviceIcons: [<i className="fas fa-egg"></i>,<i className="fas fa-carrot"></i>,<i className="fas fa-bread-slice"></i>]
+    mainText: 'Services I Offer:',
+    serviceNames: ['Proposal Shopping','Project Management','Permit to Install'],
+    serviceIcons: [<i className="fa-solid fa-file-invoice-dollar"></i>,<i className="fa-solid fa-list-check"></i>,<i className="fa-solid fa-solar-panel"></i>],
+    serviceDetails: ['lorem ipsum','lorem ipsum','lorem ipsum']
 }
 
 export const aboutData = {
@@ -34,7 +35,11 @@ export const aboutData = {
 
 export const testimonialData = {
     classNames: ['farm','cook','produce','animals'],
-    // some sort of array for image urls. will be used with styled components
+    testimonialTitles: ['The Farm','Cooking Classes','The Produce','The Animals']
+}
+
+export const galleryData = {
+    classNames: ['farm','cook','produce','animals'],
     galleryTitles: ['The Farm','Cooking Classes','The Produce','The Animals']
 }
 
@@ -58,10 +63,8 @@ export const footerData = {
 }
 
 export const brandPallet = {
-    primaryColor: '',
+    primaryColor: '#f09b59',
     secondaryColor: '',
-    primaryBackgroundColor: '#f07d26',
-    secondaryBackgroundColor: '',
-    primaryFont: '',
-    secondaryFont: '',    
+    primaryFont: `"PT Sans", sans-serif`,
+    secondaryFont: `"Nunito", sans-serif`,    
 }

@@ -22,9 +22,3 @@ function SpacerImage() {
 }
 
 export default SpacerImage;
-
-/* 
-<section class="hero-image">
-    <!--this is a blank section - our bg image will go here -->
-</section> 
-*/

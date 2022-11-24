@@ -1,19 +1,59 @@
 import React from "react";
+import styled from "styled-components";
 import { contactData } from '../data/data'
+import { brandPallet } from "../data/data";
+
+const StyledSection = styled.section`
+    display: flex;
+    flex-wrap: wrap;
+
+    & h2 {
+        font-family: ${brandPallet.primaryFont};
+        width: 100%;
+    }
+
+    & .left, .right {
+        width: 50%;
+        padding: 4% 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .contact-info {
+        width: 50%;
+        line-height: 2;
+
+        & h3 {
+            font-family: ${brandPallet.primaryFont};
+            text-align: left;
+        }
+
+        & address, a {
+            font-family: ${brandPallet.secondaryFont};
+            text-decoration: none;
+            color: #4f4f4f;
+        }
+    }
+
+    & .img-container {
+        width: 70%;
+    }
+`
 
 
 function Contact() {
 
 
     return (
-        <section id="contact">
+        <StyledSection>
             <h2>{contactData.mainText}</h2>
             <div className="left">
                 <div className="contact-info">
                     <h3>{contactData.greeting}</h3>
                     <address>{contactData.address1}<br/>{contactData.address2}<br/>
-                        <a href={`tel:${contactData.phone}`}>{contactData.phone}</a><br/>
-                        <a href={`mailto:${contactData.email}`}>{contactData.email}</a>
+                        <a href={`tel:${contactData.phone}`}>Phone: {contactData.phone}</a><br/>
+                        <a href={`mailto:${contactData.email}`}>Email: {contactData.email}</a>
                     </address>
                 </div>
             </div>
@@ -22,30 +62,8 @@ function Contact() {
                     <img src={contactData.contactImg_URL} alt={contactData.contactImg_alt} />
                 </div>
             </div>
-        </section>
+        </StyledSection>
     )
 }
 
 export default Contact;
-
-/* 
-<section id="contact">
-    <h2>Come Visit Us!</h2>
-    <div class="left">
-        <div class="contact-info">
-            <h3>Find Us At:</h3>
-        <address>123 Cottonwood Rd.<br>
-            Prince Edward County, Ontario<br>
-            Canada K1X 0H8
-            <a href="tel:1-888-888-8888">888-888-8888</a><br>
-            <a href="mailto:peter.rabbit@farmtotable.com">peter.rabbit@farmtotable.com</a>
-        </address>
-        </div>
-    </div>
-    <div class="right">
-        <div class="img-container">
-            <img src="https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/landscape.jpg?raw=true" alt="tractor towing bails of hay accross a field of wheat">
-        </div>
-    </div>
-</section> 
-*/

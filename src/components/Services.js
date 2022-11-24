@@ -1,42 +1,58 @@
 import React from "react";
 import { servicesData } from '../data/data'
 import styled from 'styled-components'
+import { brandPallet } from "../data/data";
 
-const StyledDiv_Box = styled.div`
-    width: 20%;
-    border: 3px solid #4f4f4f;
-    text-align: center;
-    padding: 4%;
-    background-color: #fff;
-`
+const StyledSection = styled.section`
+    
+    & h2 {
+        font-family: ${brandPallet.primaryFont};
+    }
 
-const StyledDiv_Container = styled.div`
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-around;
-`
+    & .container {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-around;
+        
+        & .box {
+            width: 20%;
+            border: 3px solid #4f4f4f;
+            text-align: center;
+            padding: 4%;
+            background-color: #fff;
+            
+            &:hover {
+                color: ${brandPallet.primaryColor};
+                border: 3px solid ${brandPallet.primaryColor};
+            }
 
-const StyledH3 = styled.h3`
-    margin: 15% 0;
+            & h3 {
+                display: flex;
+                justify-content: center;
+                margin: 15% 0 0 0;
+                font-family: ${brandPallet.primaryFont}
+            }
+        }
+    }
 `
 
 function Services() {
 
 
     return (
-        <section id='services'>
+        <StyledSection id='services'>
             <h2>{servicesData.mainText}</h2>
-            <StyledDiv_Container className="container">
+            <div className="container">
                 {servicesData.serviceNames.map((element, index) => {
                     return (
-                        <StyledDiv_Box key={index} className="box">
+                        <div key={index} className="box">
                             {servicesData.serviceIcons[index]}
-                            <StyledH3>{element}</StyledH3>
-                        </StyledDiv_Box>
+                            <h3>{element}</h3>
+                        </div>
                     )
                 })}
-            </StyledDiv_Container>
-        </section>
+            </div>
+        </StyledSection>
     )
 }
 

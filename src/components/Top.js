@@ -1,6 +1,7 @@
 import React from "react"
 import { topData } from '../data/data'
 import styled from 'styled-components'
+import { brandPallet } from "../data/data"
 
 const StyledSection = styled.section`
     height: 85vh;
@@ -15,9 +16,12 @@ const StyledSection = styled.section`
 
     & .titles {
         padding: 1.25%;
-        // margin: 0% 0% 45vh 0;
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.5);
         border-radius: 5px;
+
+        & h1, h2 {
+            font-family: ${brandPallet.primaryFont};
+        }
     }
 `
 
@@ -35,12 +39,3 @@ function Top() {
 }
 
 export default Top;
-
-/* 
-<section id="top">
-    <div class="titles">
-        <h1>Farm To Table</h1>
-        <h2>Ethical Fresh Products<br>Delivered To Your Door</h2>
-    </div>
-</section> 
-*/

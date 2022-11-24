@@ -4,11 +4,10 @@ import Top from "./Top";
 import Services from "./Services";
 import SpacerImage from "./SpacerImage";
 import About from "./About";
-import Gallery from "./Gallery";
+import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import { docData } from "../data/data";
-import '../App.css';
 
 function App() {
 
@@ -28,7 +27,7 @@ function App() {
       <About />
       <SpacerImage />
       <Services />
-      <Gallery />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </div>
