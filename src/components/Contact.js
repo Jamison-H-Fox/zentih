@@ -1,27 +1,39 @@
 import React from "react";
 import styled from "styled-components";
-import { contactData } from '../data/data'
 import { brandPallet } from "../data/data";
 
 const StyledSection = styled.section`
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+
+    // & * {
+    //     border: red 1px solid;
+    // }
 
     & h2 {
         font-family: ${brandPallet.primaryFont};
         width: 100%;
+        margin-bottom: 2.5%;
     }
 
     & .left, .right {
-        width: 50%;
+        width: 33%;
         padding: 4% 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    & .map {
+        display: flex;
+
+    }
+
     & .contact-info {
-        width: 50%;
+        width: 85%;
         line-height: 2;
 
         & h3 {
@@ -37,29 +49,34 @@ const StyledSection = styled.section`
     }
 
     & .img-container {
-        width: 70%;
+        width: 85%;
+        display: flex;
+        
     }
 `
 
 
-function Contact() {
+function Contact(props) {
 
 
     return (
-        <StyledSection>
-            <h2>{contactData.mainText}</h2>
+        <StyledSection id={props.data.id}>
+            <h2>{props.data.mainText}</h2>
+            <div className="map">
+                {props.data.mapEmbedCode}
+            </div>
             <div className="left">
                 <div className="contact-info">
-                    <h3>{contactData.greeting}</h3>
-                    <address>{contactData.address1}<br/>{contactData.address2}<br/>
-                        <a href={`tel:${contactData.phone}`}>Phone: {contactData.phone}</a><br/>
-                        <a href={`mailto:${contactData.email}`}>Email: {contactData.email}</a>
+                    <h3>{props.data.greeting}</h3>
+                    <address>{props.data.address1}<br/>{props.data.address2}<br/>
+                        <a href={`tel:${props.data.phone}`}>Phone: {props.data.phone}</a><br/>
+                        <a href={`mailto:${props.data.email}`}>Email: {props.data.email}</a>
                     </address>
                 </div>
             </div>
             <div className="right">
                 <div className="img-container">
-                    <img src={contactData.contactImg_URL} alt={contactData.contactImg_alt} />
+                    <img src={props.data.img} alt={props.data.imgAlt} />
                 </div>
             </div>
         </StyledSection>
