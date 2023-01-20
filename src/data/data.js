@@ -1,11 +1,11 @@
 export const docData = {
-    favicon: './resources/docData/megaphone favicon.png',
-    title: 'Your Megaphone'
+    favicon: './resources/docData/Zenith Logo Circle Filled.png',
+    title: 'Zenith Solar'
 }
 
 export const headerData = {
     id: '',
-    logo: './resources/header/megaphone.png',
+    logo: './resources/header/zenith.png',
     linkList: [
         'Home',
         'About',
@@ -19,12 +19,12 @@ export const topData = {
     mainHeading: 'We Amplify Your Voice',
     subHeading1: 'and make sure your',
     subHeading2: 'audience hears you',
-    image: './resources/top/purple.jpg'
+    image: './resources/top/solar.png'
 }
 
 export const spacerImgageData = {
     id: '',
-    image: './resources/spacer/OIP.jpg'
+    image: './resources/spacer/DJI_0164.jpg'
 }
 
 export const detailsBoxData = {
@@ -93,8 +93,8 @@ export const footerData = {
 
 export const brandPallet = {
     id: '',
-    primaryColor: '#422052',
-    secondaryColor: '#4b6bb4',
+    primaryColor: '#f0a069',
+    secondaryColor: '#666666',
     primaryFont: `"PT Sans", sans-serif`,
     secondaryFont: `"Nunito", sans-serif`
 }
